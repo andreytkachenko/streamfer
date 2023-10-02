@@ -1,0 +1,6 @@
+package streamfer:main
+
+
+world streamfer {
+  export infer
+}

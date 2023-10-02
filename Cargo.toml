@@ -1,0 +1,19 @@
+[package]
+name = "streamfer"
+version = "0.1.0"
+edition = "2021"
+categories = ["science", "multimedia", "web-assembly"]
+description = "Streaming inference server"
+keywords = ["inference", "server"]
+license = "MIT OR Apache-2.0"
+exclude = [".gitignore", ".cargo/config", ".github/**"]
+resolver = "2"
+
+[workspace]
+members = [
+  "crates/streamfer-core",
+  "crates/streamfer-engine",
+  "crates/streamfer-plugin",
+]
+
+[dependencies]

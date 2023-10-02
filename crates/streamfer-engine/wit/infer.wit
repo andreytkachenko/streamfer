@@ -1,0 +1,8 @@
+interface infer {
+    enum cap {
+        cap-codec-h264,
+        cap-codec-h265,
+    }
+
+    get-capabilities: func() -> list<cap>
+}

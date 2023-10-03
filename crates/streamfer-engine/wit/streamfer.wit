@@ -1,6 +1,8 @@
 package streamfer:main
 
 
+
 world streamfer {
-  export infer
+  import infer
+  export run: func() -> result<u64, u32>
 }

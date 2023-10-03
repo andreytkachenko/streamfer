@@ -4,8 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+anyhow = { version = "1.0.75", features = ["backtrace"] }
 cargo-component-bindings = "0.0.0"
-wasmtime = "13.0.0"
+thiserror = "1.0.49"
+wasmtime = { version = "13.0.0", features = ["component-model"] }
+wasmtime-wasi = "13.0.0"
 wit-bindgen = "0.12.0"
 
 [package.metadata.component]
